@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <title>Donate</title>
+  <link rel="shortcut icon" href="/Logo.png" type="image/x-icon">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+    .donate-pop-up-frame {
+  background-image: url(https://c.animaapp.com/mitjlk0rWO6cs1/img/image-15.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.donate-pop-up-frame .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.donate-pop-up-frame .group {
+  position: relative;
+  width: 100%;
+  max-width: 469px;
+  z-index: 1;
+}
+
+.donate-pop-up-frame .FFFFFFF {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #baac97;
+  border-radius: 20px;
+  padding: 2.5rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.donate-pop-up-frame .DAYON-AETA {
+  width: auto;
+  font-family: "Unbounded", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+.donate-pop-up-frame .text-wrapper {
+  color: #603b09;
+}
+
+.donate-pop-up-frame .span {
+  color: #000000;
+}
+
+.donate-pop-up-frame .volunteer-activism {
+  width: clamp(50px, 12vw, 60px);
+  height: clamp(50px, 12vw, 60px);
+  margin: 0rem 0;
+}
+
+.donate-pop-up-frame .div {
+  width: 100%;
+  max-width: 286px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  color: #1e1e1e;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donate-pop-up-frame .p {
+  width: 100%;
+  max-width: 241px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: clamp(0.75rem, 3vw, 0.8125rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.donate-pop-up-frame .close {
+  position: absolute;
+  top: 80%;
+  left: 31%;
+  width: 40.7%;
+  height: 60px;
+  display: flex;
+  background-color: #603b09;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 4px 4px #00000040;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate-pop-up-frame .close:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 8px 15px #00000060;
+  background-color: #7a4a0b;
+}
+
+.donate-pop-up-frame .close:active {
+  transform: translateY(0);
+  box-shadow: 3px 3px 3px #00000040;
+}
+
+.donate-pop-up-frame .close:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 3px;
+}
+
+.donate-pop-up-frame .text-wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  color: #f4f9ef;
+  font-size: clamp(0.875rem, 3.5vw, 1rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Mobile phones (portrait) */
+@media (max-width: 480px) {
+  .donate-pop-up-frame {
+    padding: 0.75rem;
+  }
+
+  .donate-pop-up-frame .FFFFFFF {
+    padding: 2rem 1rem;
+    gap: 1.25rem;
+    border-radius: 15px;
+  }
+
+  .donate-pop-up-frame .close {
+    min-height: 50px;
+    padding: 0.875rem 1.25rem;
+  }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .donate-pop-up-frame .group {
+    max-width: 420px;
+  }
+
+  .donate-pop-up-frame .FFFFFFF {
+    padding: 2.25rem 1.25rem;
+    gap: 1.375rem;
+  }
+}
+
+/* Tablets (landscape) and small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .donate-pop-up-frame .group {
+    max-width: 450px;
+  }
+}
+
+/* Large monitors */
+@media (min-width: 1441px) {
+  .donate-pop-up-frame {
+    min-height: 100vh;
+  }
+
+  .donate-pop-up-frame .group {
+    max-width: 500px;
+  }
+
+  .donate-pop-up-frame .FFFFFFF {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+}
+
+  </style>
+  <body>
+    <div class="donate-pop-up-frame">
+      <img class="rectangle" src="https://c.animaapp.com/mitjlk0rWO6cs1/img/rectangle-37.svg" />
+      <div class="group">
+        <div class="FFFFFFF">
+          <p class="DAYON-AETA"><span class="text-wrapper">D<span class="span">AYON<span class="text-wrapper"> A<span class="span">ETA</span>
+        
+          <div class="div">THANK YOU FOR DONATING!</div>
+            <img
+            class="volunteer-activism"
+            src="https://c.animaapp.com/mitjlk0rWO6cs1/img/volunteer-activism-fill-streamline-sharp-fill---material-symbols.svg"
+            alt="Donation icon"
+          />
+          <p class="p">Your generosity makes a difference.</p>
+          <a class = "close" href = "Donate.html"><div class="text-wrapper-2">CLOSE</div></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

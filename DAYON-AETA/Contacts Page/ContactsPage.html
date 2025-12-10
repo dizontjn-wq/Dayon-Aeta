@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Contacts</title>
+  <link rel="shortcut icon" href="/Logo.png" type="image/x-icon">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Contact Dayon Aeta Foundation - Get in touch with us to support the Aeta community" />
+    <title>Contact - Dayon Aeta Foundation</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <Style>
+    body {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .contact .header {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: transparent;
+  box-sizing: border-box;
+  animation: slideDown 0.6s ease-out;
+}
+.contact .navbar {
+  margin: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 80px;
+}
+.contact .icon {
+  display: none;
+}
+.contact .DAYON-AETA-3 {
+  width: auto;
+  margin:100px;
+  font-size: 35px;
+  font-family: "Unbounded", Helvetica;
+  color: transparent;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  flex-shrink: 0;
+}
+.contact .text-wrapper {
+  color: #603b09;
+}
+
+.contact .span {
+  font: unbounded;
+  color: #ffffff;
+}
+
+.contact .Contacts,
+.contact .Programs,
+.contact .AboutUs,
+.contact .GetInvolved,
+.contact .Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-family: "Jost", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0 20px;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.contact .Contacts::after,
+.contact .Programs::after,
+.contact .AboutUs::after,
+.contact .GetInvolved::after,
+.contact .Home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.contact .Contacts:hover::after,
+.contact .Programs:hover::after,
+.contact .AboutUs:hover::after,
+.contact .GetInvolved:hover::after,
+.contact .Home:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.contact {
+  background-color: #e5e1da;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.contact .DSC {
+  width: 100%;
+  height: 40vh;
+  min-height: 250px;
+  max-height: 390px;
+  object-fit: cover;
+  display: block;
+}
+
+.contact .GetinTouch{
+  margin: 2rem 1rem 1rem;
+  font-family: "Unbounded", Helvetica;
+  font-weight: 700;
+  color: #010000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Main content container */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Info section */
+.info-section {
+  order: 1;
+}
+
+.contact .p {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #030000;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item img {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.info-item p {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #030000;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  letter-spacing: 0;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Form section */
+.form-section {
+  order: 2;
+}
+
+.contact .rectangle {
+  background-color: #603b0952;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.form-group label {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #797272;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  letter-spacing: 0;
+  padding-left: 0.5rem;
+}
+
+.form-group label .required {
+  color: #9e0000;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #030000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #797272;
+}
+
+.form-group textarea {
+  min-height: 11rem;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #603b09;
+  outline-offset: 2px;
+}
+
+.contact .submit {
+  width: 100%;
+  max-width: 15rem;
+  height: 3.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #603b09;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px #00000040;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 1.5rem auto 0;
+  border: none;
+}
+
+.contact .submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 6px 6px #00000040;
+}
+
+.contact .submit:active {
+  transform: translateY(0);
+  box-shadow: 3px 3px 3px #00000040;
+}
+
+.contact .submit:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 3px;
+}
+
+.contact .text-wrapper-6 {
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  color: #f4f9ef;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Map section */
+.map-section {
+  width: 100%;
+  margin: 2rem 0;
+  order: 3;
+}
+
+.contact .image {
+  width: 50%;
+  display: flex;
+  margin-left:538px;
+  height: auto;
+  max-height: 44rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+.contact .text-wrapper-19 {
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  color: #f4f9ef;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Footer */
+.contact .rectangle-6 {
+  width: 100%;
+  background-color: #603b0952;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #0a0000;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  word-break: break-word;
+}
+
+.footer-link img {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.contact .text-wrapper-11 {
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #0a0000;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 1rem 0 0.5rem;
+}
+
+.contact .text-wrapper-7 {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #0a0000;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .SEE-LOCATION{
+  margin: 2rem 1rem 1rem;
+  font-family: "Unbounded", Helvetica;
+  font-weight: 700;
+  color: #010000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+.contact .map{
+  width: 50%;
+  margin-left: 25%;
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+  
+  .contact .text-wrapper {
+    text-align: left;
+    margin: 2rem 2rem 1.5rem;
+  }
+
+  .contact-content {
+    padding: 2rem;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .contact .rectangle {
+    padding: 2rem;
+  }
+
+  .info-section {
+    order: 1;
+  }
+
+  .form-section {
+    order: 2;
+  }
+
+  .map-section {
+    order: 3;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-link {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact .DSC {
+    height: 390px;
+  }
+
+  .contact .text-wrapper {
+    margin: 3rem 0 1.5rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+
+  .info-section {
+    flex: 0 0 35%;
+    order: 1;
+  }
+
+  .form-section {
+    flex: 1;
+    order: 2;
+  }
+
+  .map-section {
+    order: 3;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .contact .rectangle {
+    padding: 2.5rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer-link {
+    min-width: auto;
+  }
+}
+
+/* Large desktop styles (1440px+) */
+@media (min-width: 1440px) {
+  .contact-content {
+    padding: 3rem 4rem;
+  }
+
+  .contact .rectangle {
+    padding: 3rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .contact .submit,
+  .contact .see-location {
+    display: none;
+  }
+
+  .contact {
+    background-color: white;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .contact .submit,
+  .contact .see-location {
+    border: 2px solid #000;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: 3px solid #000;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .contact .submit,
+  .contact .see-location {
+    transition: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact .DAYON-AETA-3 {
+    font-size: 28px;
+    margin: 50px;
+    margin-left: 30px;
+  }
+
+  .contact .navbar {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    margin: 0;
+    background: white;
+    padding: 16px 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    flex-direction: column;
+    gap: 5px;
+    z-index: 200;
+    width: auto;
+  }
+
+  .contact .navbar.show {
+    display: flex;
+  }
+
+  .contact .icon {
+    color: white;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 55px;
+    z-index: 210;
+  }
+
+  .contact .Contacts,
+  .contact .Programs,
+  .contact .AboutUs,
+  .contact .GetInvolved,
+  .contact .Home {
+    font-size: 16px;
+    padding: 0 12px;
+    height: 32px;
+    color: black;
+  }
+}
+
+/* Consistent mobile navbar rules (generic selectors) */
+@media (max-width: 768px) {
+.contact .icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 52px;
+    z-index: 30;
+  }
+
+.contact .navbar {
+    display: none;
+    width: 90%;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(229,225,218,0.95);
+    padding: 12px 20px 18px 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 0;
+    align-items: center;
+    z-index: 20;
+  }
+
+.contact .navbar.show {
+    display: flex;
+  }
+
+.contact  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+.contact .nav-item {
+   font-size: 16px;
+  }
+}
+
+  </Style>
+  <body>
+    <div class="contact">
+        <header class="header">
+         <a class="DAYON-AETA-3" href="/Home Page/HomePage.html"><span class="text-wrapper">D<span class="span">AYON <span class="text-wrapper"> A<span class="span">ETA</span></a> 
+        
+        <nav class="navbar">
+          <a class="Home" href="/Home Page/HomePage.html">HOME</a>
+          <a class="AboutUs" href="/About Us Page/AboutUsPage.html">ABOUT US</a>
+          <a class="GetInvolved" href = "/Get Involved Page/GetInvolvedPage.html">GET INVOLVED</a>
+          <a class="Programs" href = "/Programs Page/ProgramsPage.html">PROGRAMS</a>
+          <a class="Contacts" href="/Contacts Page/ContactsPage.html">CONTACT</a>
+        </nav>
+          <button class="icon" aria-label="Toggle menu" onclick="myFunction()">☰</button>
+      </header>
+      <!-- Hero Image -->
+      <img class="DSC" src="https://c.animaapp.com/mik6xthpDBy6h3/img/dsc-0655-1.png" alt="Dayon Aeta Foundation community" />
+      
+      <!-- Main Heading -->
+      <h1 class="GetinTouch">GET IN TOUCH WITH US!</h1>
+      
+      <!-- Main Content -->
+      <div class="contact-content">
+        <!-- Info Section -->
+        <section class="info-section">
+          <p class="p">
+            Let us know how we can work together to support the Aeta community. Whether you want to volunteer, donate,
+            partner with us, or simply learn more about our programs, we would love to hear from you. Your support means a
+            lot and helps create better opportunities and brighter futures for Aeta families.
+          </p>
+          
+          <div class="info-item">
+            <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/round-pushpin-streamline-kawaii-emoji.png" alt="" aria-hidden="true" />
+            <p>Fill out the form to reach out to us.</p>
+          </div>
+          
+          <div class="info-item">
+            <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/e-mail-streamline-kawaii-emoji.png" alt="" aria-hidden="true" />
+            <p>Share your questions, ideas, or messages — we'll get back to you as soon as we can.</p>
+          </div>
+          
+          <div class="info-item">
+            <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/heart-suit-streamline-emoji---free.svg" alt="" aria-hidden="true" />
+            <p>Together, we can make a difference.</p>
+          </div>
+        </section>
+        
+        <!-- Form Section -->
+        <section class="form-section">
+          <form class="rectangle" id="contactForm" aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required aria-required="true" placeholder="Enter your first name"/>
+              </div>
+              
+              <div class="form-group">
+                <label for="lastName">
+                  Last name <span class="required">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  required 
+                  aria-required="true"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">
+                  E-mail Address <span class="required">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  aria-required="true"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">
+                  Phone number <span class="required">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required 
+                  aria-required="true"
+                  placeholder="+1 (555) 000-0000"
+                />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Your message..."aria-label="Your message"></textarea>
+              </div>
+            </div>
+            
+            <button type="submit" class="submit">
+              <span class="text-wrapper-6">SUBMIT</span>
+            </button>
+          </form>
+        </section>
+      </div>
+      
+      <!-- Map Section -->
+      <section class="map-section">
+      <h2 class="SEE-LOCATION">SEE LOCATION</h2>
+      
+      <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4385.136405188846!2d120.3714547!3d15.2364342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339691ad57293467%3A0x611c62f46ebb6f2c!2sAeta%20Community!5e1!3m2!1sen!2sph!4v1764516948944!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </section>
+      
+      <!-- Footer -->
+      <footer class="rectangle-6">
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector.svg" alt="Instagram icon" />
+              <span>@dayonaetafoundation</span>
+            </div>
+            
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector-1.svg" alt="Website icon" />
+              <span>https://www.dayonaetafoundation.org</span>
+            </div>
+            
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector-2.svg" alt="Phone icon" />
+              <span>0-123-456-7890</span>
+            </div>
+          </div>
+          
+          <p class="text-wrapper-11">DAYON AETA</p>
+          <p class="text-wrapper-7">© 2025 All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+        <script>
+    function myFunction() {
+      var nav = document.querySelector('.navbar');
+      if (!nav) return;
+      nav.classList.toggle('show');
+    }
+  </script>
+  </body>
+</html>

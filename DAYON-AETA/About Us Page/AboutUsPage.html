@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <title>About Us</title>
+  <link rel="shortcut icon" href="/Logo.png" type="image/x-icon">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-overlay"></div>
+    <div class="page-content">
+    <!-- all your page content here -->
+
+    <div class="about-us-more-about">
+      <!-- Header -->
+      <header class="header">
+         <a class="DAYON-AETA-3" href="/Home Page/HomePage.html"><span class="text-wrapper">D<span class="span">AYON <span class="text-wrapper"> A<span class="span">ETA</span></a> 
+        
+        <nav class="navbar">
+          <a class="Home" href="/Home Page/HomePage.html">HOME</a>
+          <a class="AboutUs" href="/About Us Page/AboutUsPage.html">ABOUT US</a>
+          <a class="GetInvolved" href = "/Get Involved Page/GetInvolvedPage.html">GET INVOLVED</a>
+          <a class="Programs" href = "/Programs Page/ProgramsPage.html">PROGRAMS</a>
+          <a class="Contacts" href="/Contacts Page/ContactsPage.html">CONTACT</a>
+        </nav>
+        <button class="icon" aria-label="Toggle menu" onclick="myFunction()">☰</button>
+      </header>
+      <!-- Hero Section -->
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="carousel-item" style="background-image: url(/Pictures/1.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/2.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/3.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/4.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/5.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/6.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/7.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/8.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/9.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/10.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/11.jpg);"></div>
+          <div class="carousel-item" style="background-image: url(/Pictures/12.jpg);"></div>
+        </div>
+      </div>
+      <script>
+        let index = 0;
+
+        function slide() {
+            const slides = document.querySelector(".carousel");
+            const sliderWidth = document.querySelector(".carousel-wrapper").clientWidth;
+
+            index++;
+            if (index > slides.children.length - 1) {
+                index = 0;
+            }
+
+            slides.style.transform = `translateX(-${index * sliderWidth}px)`;
+        }
+
+        setInterval(slide, 3000);
+      </script>
+
+      <!-- Photo Credits -->
+      <div class="photo-credits">
+        <div class="text-wrapper-5">All photos courtesy of:</div>
+        <div class="text-wrapper-6">Alaia Coffee Tarlac City</div>
+      </div>
+
+      <!-- About Section -->
+      <p class="the-dayon-aeta-team">
+        The Dayon Aeta Team is a group of young and passionate volunteers committed to bringing hope and support to Aeta
+        communities. We started with a shared dream — to make a difference through simple acts of kindness and
+        collective effort. Each of us believes that helping others doesn't require much, only a sincere heart and a
+        strong will to serve.<br /><br />Together, we organize outreach programs, donation drives, and community
+        activities that focus on education, health, and livelihood. More than a team, we are a family — bound by
+        compassion, teamwork, and the desire to uplift lives.
+      </p>
+
+      <!-- Mission, Vision, Core Values Section -->
+      <div class="mission-vision-section">
+        <div class="mission-vision-titles">
+          <div class="text-wrapper-1">MISSION</div>
+          <div class="div">VISION</div>
+          <div class="text-wrapper-2">CORE VALUES</div>
+        </div>
+
+        <div class="mission-vision-cards">
+          <div class="frame">
+            <img class="image" src="https://c.animaapp.com/micm2tkf1EXhJv/img/image-5.png" />
+            <div class="rectangle"></div>
+            <img class="vector" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/target-streamline-block---free.svg" />
+            <p class="p">
+              To empower the Aeta community by providing access to education, healthcare, and sustainable livelihood while
+              preserving their cultural heritage.
+            </p>
+          </div>
+
+          <div class="frame-2">
+            <img class="image-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/image-6.png" />
+            <div class="rectangle"></div>
+            <img class="vector" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/eye-streamline-font-awesome-solid.svg" />
+            <p class="text-wrapper-3">
+              A future where the Aeta community thrives with dignity, opportunity, and cultural pride, supported by
+              collective compassion and action.
+            </p>
+          </div>
+
+          <div class="frame-3">
+            <img class="image-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/image-7.png" />
+            <div class="rectangle"></div>
+            <img class="vector" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-2.svg" />
+            <img class="img-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-hand-heart.svg" />
+            <p class="text-wrapper-4">
+              Our core values reflect our dedication to the Aeta community. We uphold compassion, respect, integrity, and
+              collaboration to achieve meaningful change, and promote empowerment to help communities become self-sustaining
+              and resilient.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="frame-9"><div class="text-wrapper-21">KUWENTO NG PAGLILINGKOD</div></div>
+
+      <!-- Facebook Posts Section -->
+      <div class="facebook-posts-section">
+        <div class="facebook-post">
+          <div class="post-actions">
+            <div class="text-wrapper-8">Like</div>
+            <div class="text-wrapper-9">Reply</div>
+            <div class="text-wrapper-10">1w</div>
+          </div>
+          <div class="text-wrapper-11">View more comments</div>
+          <img class="line" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-2.svg" />
+          <img class="line-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-2.svg" />
+          <img class="frame-4" src="https://c.animaapp.com/micm2tkf1EXhJv/img/frame-1.svg" />
+          <img class="vector-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-8.svg" />
+          <img class="vector-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-10.svg" />
+          <div class="text-wrapper-12">Comment</div>
+          <div class="text-wrapper-13">Share</div>
+          <img class="vector-4" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-6.svg" />
+          <div class="rectangle-2"></div>
+          <div class="text-wrapper-14">Write a comment...</div>
+          <img class="group" src="https://c.animaapp.com/micm2tkf1EXhJv/img/group-24.png" />
+          <div class="foto-perfil-empresa"></div>
+          <div class="nome-empresa"><div class="codefive">Dayon Aeta Foundation</div></div>
+          <div class="foto-perfil">
+            <img class="rectangle-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/rectangle-2.png" />
+          </div>
+          <div class="foto-perfil-seguidor">
+            <img class="rectangle-4" src="https://c.animaapp.com/micm2tkf1EXhJv/img/rectangle-1.png" />
+          </div>
+          <div class="frame-5">
+            <div class="div-wrapper"><div class="joana-almeida">Justin Nabunturan</div></div>
+            <div class="comentrio"><div class="est-fant-stico-parab">galing gagi</div></div>
+          </div>
+          <div class="post-texto">
+            <p class="tivemos-o-privil-gio">
+              Join us in uplifting our Aeta communities through a meaningful day of service, connection, and cultural
+              appreciation. Whether you&#39;re helping distribute essentials, sharing skills, or simply lending a
+              listening ear — every act of kindness makes a difference.
+            </p>
+          </div>
+          <div class="frame-6">
+            <div class="div-wrapper"><div class="element-de-janeiro">September 9</div></div>
+            <img class="group-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/group-27.png" />
+          </div>
+          <div class="post-reacoes"><div class="text-wrapper-15">12.3k</div></div>
+          <div class="frame-7">
+            <div class="div-wrapper"><div class="text-wrapper-15">77 comments</div></div>
+            <div class="div-wrapper"><div class="text-wrapper-15">18 shares</div></div>
+          </div>
+          <div class="post-imagem"></div>
+          <img
+            class="verified-fill"
+            src="https://c.animaapp.com/micm2tkf1EXhJv/img/verified-fill-streamline-rounded-fill---material-symbols.svg"
+          />
+        </div>
+
+        <div class="facebook-post-2">
+          <div class="post-actions">
+            <div class="text-wrapper-8">Like</div>
+            <div class="text-wrapper-9">Reply</div>
+            <div class="text-wrapper-10">2hr</div>
+          </div>
+          <div class="text-wrapper-11">View more comments</div>
+          <img class="line" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-2.svg" />
+          <img class="line-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-2.svg" />
+          <img class="frame-4" src="https://c.animaapp.com/micm2tkf1EXhJv/img/frame-1.svg" />
+          <img class="vector-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-8.svg" />
+          <img class="vector-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-10.svg" />
+          <div class="text-wrapper-12">Comment</div>
+          <div class="text-wrapper-13">Share</div>
+          <img class="vector-4" src="https://c.animaapp.com/micm2tkf1EXhJv/img/vector-6.svg" />
+          <div class="rectangle-2"></div>
+          <div class="text-wrapper-14">Write a comment...</div>
+          <img class="group" src="https://c.animaapp.com/micm2tkf1EXhJv/img/group-24-1.png" />
+          <div class="foto-perfil-empresa"></div>
+          <div class="nome-empresa"><div class="codefive">Dayon Aeta Foundation</div></div>
+          <div class="foto-perfil">
+            <img class="rectangle-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/rectangle-2.png" />
+          </div>
+          <div class="foto-perfil-seguidor-2"></div>
+          <div class="frame-8">
+            <div class="div-wrapper"><div class="joana-almeida">Ron Dela Cruz</div></div>
+            <div class="est-fant-stico-parab-wrapper">
+              <p class="est-fant-stico-parab-2">Matsalove sa memories. Magstay ang tunay, aalis ang walang bitaw.</p>
+            </div>
+          </div>
+          <div class="tivemos-o-privil-gio-wrapper">
+            <p class="tivemos-o-privil-gio-2">
+              <span class="span">✨ Volunteer with us. Empower with us. Grow with us. ✨<br /><br /></span>
+              <span class="text-wrapper-16"
+                >#DayonAeta #VolunteerForACause #AetaCommunity #ServeWithLove #BayanihanSpirit</span
+              >
+            </p>
+          </div>
+          <div class="frame-6">
+            <div class="div-wrapper"><div class="element-de-janeiro">October 12</div></div>
+            <img class="group-2" src="https://c.animaapp.com/micm2tkf1EXhJv/img/group-27-1.png" />
+          </div>
+          <div class="post-reacoes"><p class="text-wrapper-15">Kanye West and 9.9k others</p></div>
+          <div class="frame-7">
+            <div class="div-wrapper"><div class="text-wrapper-15">124 comments</div></div>
+            <div class="div-wrapper"><div class="text-wrapper-15">66 shares</div></div>
+          </div>
+          <div class="post-imagem-2"></div>
+          <img
+            class="verified-fill"
+            src="https://c.animaapp.com/micm2tkf1EXhJv/img/verified-fill-streamline-rounded-fill---material-symbols.svg"
+          />
+        </div>
+      </div>
+
+      <!-- Story Section -->
+      <p class="maraming-pagsubok">
+        Maraming pagsubok ang hinarap ng mga Aeta sa paglipas ng panahon — mula sa mga kalamidad na nagbago sa kanilang
+        lupain at pamumuhay, hanggang sa patuloy na kakulangan sa malinis na tubig, edukasyon, kabuhayan, at iba pang
+        pangunahing pangangailangan. Sa kabila nito, nananatiling matatag ang kanilang kultura, lakas, at pag-asa.<br /><br />Layunin
+        ng Dayon Aeta Foundation na suportahan ang kanilang paglalakbay tungo sa mas maayos na kinabukasan. Naniniwala
+        kami na sa tulong ng tamang mga kagamitan — tulad ng mga water system, kasangkapan sa pagsasaka, programang
+        pangkabuhayan, at edukasyon — mas magiging matatag at maunlad ang mga Aeta at ang kanilang komunidad.<br /><br />Ang
+        bawat tulong mo ay may malaking epekto. Kahit maliit na halaga, nakakatulong ito sa mga proyektong tunay na
+        nagpapabuti ng buhay at nagbibigay ng bagong pag-asa. Sama-sama nating buuin ang isang kinabukasang walang
+        maiiwan. Tulong mo ngayon, pag-asa nila bukas.<br />Maging kabahagi sa pagbibigay ng bagong simula at mas
+        maliwanag na kinabukasan para sa Aeta community.
+      </p>
+
+<!-- ...existing code... -->
+<!-- Video Section: click thumbnail to play inside the page -->
+<div class="video-section" style="position: relative;">
+  <div class="video-thumb" data-video-id="EN3y7ELbVzg" role="button" aria-label="Play Dayon Aeta video">
+    <img class="image-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/image-70.png" alt="Dayon Aeta video thumbnail" />
+    <span class="video-play" aria-hidden="true">▶</span>
+  </div>
+
+  <!-- container where iframe will be injected -->
+  <div class="video-embed" aria-hidden="true"></div>
+
+  <div class="text-wrapper-36">Video credits to:</div>
+  <div class="text-wrapper-37">Leonardo Alcantara</div>
+  <div class="video-link-wrapper" style="text-align:center; margin-top:8px;">
+    
+  </div>
+</div>
+
+<!-- small inline script to swap thumbnail for an iframe player -->
+<script>
+  (function () {
+    const thumb = document.querySelector('.video-thumb');
+    const embed = document.querySelector('.video-embed');
+    if (!thumb || !embed) return;
+    thumb.addEventListener('click', function () {
+      const id = thumb.dataset.videoId;
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + id + '?rel=0&modestbranding=1&autoplay=1';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.style.width = '1000px';
+      iframe.style.height = '500px';
+      embed.innerHTML = '';
+      embed.appendChild(iframe);
+      embed.setAttribute('aria-hidden', 'false');
+      thumb.style.display = 'none';
+    });
+  })();
+</script>
+<!-- ...existing code... -->
+
+      <!-- Section Header -->
+      <div class="frame-10"><div class="text-wrapper-21">TINIG NG KABUTIHAN</div></div>
+
+      <!-- Feedback Section -->
+      <div class="feedback-final-wrapper">
+        <div class="feedback-final">
+          <div class="feedback">
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-18">
+                Masarap sa pakiramdam na makatulong at makasama ang komunidad sa kanilang pag-unlad
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-18">
+                Dahil sa mga programa, nagkaroon kami ng inspirasyon na ipagpatuloy ang aming pag-aaral.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Ipinagmamalaki naming maging bahagi ng proyektong ito at makita ang epekto ng aming suporta sa mga
+                pamilya.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-19">
+                Ang sarap sa pakiramdam na makatulong at makasama sa mga taong nagsisikap para sa pagbabago.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-19">
+                Dahil sa mga programa, mas lumakas ang loob namin na tuparin ang aming mga pangarap at makatulong din sa
+                iba.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Nakakatuwang makita na ang aming tulong ay nagdudulot ng pag-asa at magandang kinabukasan para sa mga
+                kabataan
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-20">
+                Yung pakiramdam na nakakatulong ka, first time kong maramdaman yung feeling na yun. Kase alam mong ma
+                aappreciate nila yung binigay mo sakanila.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-20">
+                Dahil sa mga programa, naging matatag at maginhawa ang aming b  uhay, at nagpapasalamat kami ng sobra
+                dahil sa mga mabubuting puso na katulad niyo.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Nung naikwento saakin ang charity na yan, na engganyo talaga&nbsp;&nbsp;ako ng sobra, at natuwa ng todo
+                dahil sa mga ngiti nila.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-18">
+                Masarap sa pakiramdam na makatulong at makasama ang komunidad sa kanilang pag-unlad
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-18">
+                Dahil sa mga programa, nagkaroon kami ng inspirasyon na ipagpatuloy ang aming pag-aaral.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Ipinagmamalaki naming maging bahagi ng proyektong ito at makita ang epekto ng aming suporta sa mga
+                pamilya.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-19">
+                Ang sarap sa pakiramdam na makatulong at makasama sa mga taong nagsisikap para sa pagbabago.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-19">
+                Dahil sa mga programa, mas lumakas ang loob namin na tuparin ang aming mga pangarap at makatulong din sa
+                iba.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Nakakatuwang makita na ang aming tulong ay nagdudulot ng pag-asa at magandang kinabukasan para sa mga
+                kabataan
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Volunteer</div>
+              <p class="text-wrapper-20">
+                Yung pakiramdam na nakakatulong ka, first time kong maramdaman yung feeling na yun. Kase alam mong ma
+                aappreciate nila yung binigay mo sakanila.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Aeta Youth</div>
+              <p class="text-wrapper-20">
+                Dahil sa mga programa, naging matatag at maginhawa ang aming buhay, at nagpapasalamat kami ng sobra
+                dahil sa mga mabubuting puso na katulad niyo.
+              </p>
+            </div>
+            <div class="feedback-2">
+              <img class="mdi-person" src="https://c.animaapp.com/micm2tkf1EXhJv/img/mdi-person.svg" />
+              <img class="el-quote-alt" src="https://c.animaapp.com/micm2tkf1EXhJv/img/el-quote-alt.svg" />
+              <img class="line-3" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-19.svg" />
+              <div class="text-wrapper-17">Donor</div>
+              <p class="text-wrapper-19">
+                Nung naikwento saakin ang charity na yan, na engganyo talaga&nbsp;&nbsp;ako ng sobra, at natuwa ng todo
+                dahil sa mga ngiti nila.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Section -->
+      <p class="text-wrapper-22">
+        Taos-pusong nagpapasalamat ang mga Aeta sa tulong at tiwalang patuloy na ipinagkakaloob ng aming foundation,
+        gayundin sa mga volunteers na walang sawang nagbibigay ng oras at serbisyo, at sa mga nag-donate na bukas-palad
+        na nagbabahagi ng kanilang biyaya upang mapabuti ang aming kabuhayan, edukasyon, at kinabukasan bilang isang
+        komunidad.
+      </p>
+
+      <!-- Support Button -->
+      <img class="line-20" src="https://c.animaapp.com/micm2tkf1EXhJv/img/line-4.svg" />
+
+      <a class="support-us" href = "/Get Involved Page/GetInvolvedPage.html"><div class="text-wrapper-23">SUPPORT US</div></a>
+
+      <!-- Footer -->
+      <footer class="rectangle-6">
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector.svg" alt="Instagram icon" />
+              <span>@dayonaetafoundation</span>
+            </div>
+            
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector-1.svg" alt="Website icon" />
+              <span>https://www.dayonaetafoundation.org</span>
+            </div>
+            
+            <div class="footer-link">
+              <img src="https://c.animaapp.com/mik6xthpDBy6h3/img/vector-2.svg" alt="Phone icon" />
+              <span>0-123-456-7890</span>
+            </div>
+          </div>
+          <p class="footer-end"><span class = "footer">DAYON AETA</span><br>© 2025 All rights reserved.</p>
+        </div>
+    <script src="animations.js"></script>
+      </div>
+      
+  </body>
+</html>
